@@ -11,7 +11,7 @@
               pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.3.1"
               companyName="CICM" companyEmail="" companyWebsite="https://github.com/pierreguillot/Camomile"
               defines="PD=1&#10;USEAPI_DUMMY=1&#10;PD_INTERNAL=1&#10;" pluginIsMidiEffectPlugin="0"
-              buildAUv3="1">
+              buildAUv3="0">
   <MAINGROUP id="Lkdhlo" name="Camomile">
     <GROUP id="{6858D652-D432-5FB6-C946-D9F3FA76E6E9}" name="Source">
       <FILE id="HhHZI4" name="LookAndFeel.cpp" compile="1" resource="0" file="Source/LookAndFeel.cpp"/>
