@@ -346,7 +346,27 @@ public:
                                   float x, float y, float width, float height,
                                   const Colour&, float outlineThickness, float cornerSize,
                                   bool flatOnLeft, bool flatOnRight, bool flatOnTop, bool flatOnBottom) noexcept;
-
+    
+    Array<int> getWidthsForTextButtons (AlertWindow&, const Array<TextButton*>& buttons) override
+    {
+        const int n = buttons.size();
+        Array<int> buttonWidths;
+        
+        const int buttonHeight = getAlertWindowButtonHeight();
+        
+        for (int i = 0; i < n; ++i)
+            buttonWidths.add (getTextButtonWidthToFitText (*buttons.getReference (i), buttonHeight));
+        
+        return buttonWidths;
+    }
+    
+    Component* getParentComponentForMenuOptions (const PopupMenu::Options& options) override
+    {
+        return options.getParentComponent();
+    }
+    
+    void preparePopupMenuWindow (Component&)  override {}
+    
 private:
     //==============================================================================
     ScopedPointer<Drawable> folderImage, documentImage;

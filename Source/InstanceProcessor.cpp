@@ -20,8 +20,7 @@ m_parameters(64), m_playing_list(2), m_measure_list(5)
                          pd::Environment::getPdVersion());
     s_playing           = pd::Symbol("playing");
     s_measure           = pd::Symbol("measure");
-    busArrangement.inputBuses.getReference(0).channels = AudioChannelSet::discreteChannels(16);
-    busArrangement.outputBuses.getReference(0).channels = AudioChannelSet::discreteChannels(16);
+    
     m_path = juce::File::getCurrentWorkingDirectory().getFullPathName();
 }
 
