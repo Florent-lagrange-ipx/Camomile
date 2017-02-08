@@ -2,7 +2,7 @@
 
 <JUCERPROJECT id="y2ndru" name="Camomile" projectType="audioplug" version="0.0.7"
               bundleIdentifier="com.cicm.Camomile" includeBinaryInAppConfig="1"
-              buildVST="1" buildVST3="1" buildAU="1" buildRTAS="0" buildAAX="0"
+              buildVST="1" buildVST3="1" buildAU="0" buildRTAS="0" buildAAX="0"
               pluginName="Camomile" pluginDesc="Camomile" pluginManufacturer="Pierre Guillot"
               pluginManufacturerCode="CICM" pluginCode="PGCA" pluginChannelConfigs=""
               pluginIsSynth="0" pluginWantsMidiIn="1" pluginProducesMidiOut="1"
@@ -115,6 +115,7 @@
         <FILE id="aEOE8p" name="g_array.c" compile="1" resource="0" file="ThirdParty/PureData/src/g_array.c"/>
         <FILE id="LbhS7n" name="g_bang.c" compile="1" resource="0" file="ThirdParty/PureData/src/g_bang.c"/>
         <FILE id="V8y9am" name="g_canvas.c" compile="1" resource="0" file="ThirdParty/PureData/src/g_canvas.c"/>
+        <FILE id="oqLM0Y" name="g_clone.c" compile="1" resource="0" file="ThirdParty/PureData/src/g_clone.c"/>
         <FILE id="Si8Lft" name="g_canvas.h" compile="0" resource="0" file="ThirdParty/PureData/src/g_canvas.h"/>
         <FILE id="kpJAIs" name="g_editor.c" compile="1" resource="0" file="ThirdParty/PureData/src/g_editor.c"/>
         <FILE id="REA2VX" name="g_graph.c" compile="1" resource="0" file="ThirdParty/PureData/src/g_graph.c"/>

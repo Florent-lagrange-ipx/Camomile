@@ -117,6 +117,7 @@ OBJECTS := \
   $(JUCE_OBJDIR)/g_array_7cbe43ee.o \
   $(JUCE_OBJDIR)/g_bang_c2b9244d.o \
   $(JUCE_OBJDIR)/g_canvas_61cd436d.o \
+  $(JUCE_OBJDIR)/g_clone_dc28fdf2.o \
   $(JUCE_OBJDIR)/g_editor_c7a43e42.o \
   $(JUCE_OBJDIR)/g_graph_b93aa9a3.o \
   $(JUCE_OBJDIR)/g_guiconnect_76e73ba4.o \
@@ -468,6 +469,11 @@ $(JUCE_OBJDIR)/g_bang_c2b9244d.o: ../../ThirdParty/PureData/src/g_bang.c
 $(JUCE_OBJDIR)/g_canvas_61cd436d.o: ../../ThirdParty/PureData/src/g_canvas.c
 	-@mkdir -p $(JUCE_OBJDIR)
 	@echo "Compiling g_canvas.c"
+	$(V_AT)$(CC) $(JUCE_CFLAGS) -o "$@" -c "$<"
+
+$(JUCE_OBJDIR)/g_clone_dc28fdf2.o: ../../ThirdParty/PureData/src/g_clone.c
+	-@mkdir -p $(JUCE_OBJDIR)
+	@echo "Compiling g_clone.c"
 	$(V_AT)$(CC) $(JUCE_CFLAGS) -o "$@" -c "$<"
 
 $(JUCE_OBJDIR)/g_editor_c7a43e42.o: ../../ThirdParty/PureData/src/g_editor.c

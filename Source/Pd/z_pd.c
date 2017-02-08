@@ -43,6 +43,14 @@ void glob_midi_dialog(t_pd *dummy, t_symbol *s, int argc, t_atom *argv) {}
 int sys_mididevnametonumber(int output, const char *name) { return 0; }
 void sys_mididevnumbertoname(int output, int devno, char *name, int namesize) {}
 
+int sys_midiapi = 0;
+void sys_set_midi_api(int which)
+{
+    sys_midiapi = which;
+    if (sys_verbose)
+        post("sys_midiapi %d", sys_midiapi);
+}
+
 static t_class *z_receiver_class;
 
 typedef struct _receiver
